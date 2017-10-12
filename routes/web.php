@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'BillSplitController@index');
+
+Route::get('/calculate-tip', 'BillSplitController@calculateTip');

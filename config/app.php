@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://asmatmuradi.info/p3'),
+    'url' => env('APP_URL', 'http://p3.asmatmuradi.info'),
 
     /*
     |--------------------------------------------------------------------------

@@ -8,7 +8,7 @@ class BillSplitController extends Controller
 {
     public function index()
     {
-      return 'Show form to collect info from user....';
+      return view('billsplit.index' );
     }
 
     public function calculateTip()

@@ -7,5 +7,19 @@
 
 
 @section('content')
-        <h1>Show Bill Split Amount: {{ '$100' }}</h1>
+      <h1>Bill Split</h1>
+
+        <!-- tabAmount input-->
+        <div class="form-group">
+          <label for="Total_Tab">Total Tab</label>
+            <input id="Total_Tab" name="Total_Tab" type="number" >
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label  for="Split_How_Many_Way?">Split How Many Way?</label>
+            <input id="Split_How_Many_Way?" name="Split_How_Many_Way?" type="number" >
+        </div>
+
+        <!-- Multiple Radios -->
 @endsection

@@ -4,8 +4,8 @@
 	<title>
         @yield('title', 'Project3')
     </title>
-
-	<meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="public/css/master.css">
+  	<meta charset='utf-8'>
 
 </head>
 <body>

@@ -10,13 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/env', function () {
+Route::any('/env', function () {
     dump(config('app.name'));
     dump(config('app.env'));
     dump(config('app.debug'));
     dump(config('app.url'));
 });
 
-Route::get('/', 'BillSplitController@index');
-
-Route::get('/calculate-tip', 'BillSplitController@calculateTip');
+Route::any('/', 'BillSplitController@index');

@@ -6,10 +6,11 @@
     </title>
 
 		<meta charset='utf-8'>
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="/css/master.css">
 
-	    <link rel="stylesheet" type="text/css" href="css/master.css">
 		@stack('head')
 
 </head>
@@ -17,10 +18,11 @@
 
 	<header class="text-center">
 		<img
-        src='https://cdn.dribbble.com/users/358115/screenshots/3194551/cell-billsplit.jpg'
-        style='width:100px'
-				align='center'
-        alt='Project3 Logo'>
+				<a href='/'><img
+            src='/img/cell-billsplit.jpg'
+						style='width:100px'
+						align='center'
+            alt='Project3 Logo'></a>
 	</header>
 
 	<section id='main'>

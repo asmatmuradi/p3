@@ -90,5 +90,5 @@
             <h2> The bill is ${{ $tabForEachWay }} each way.</h2>
             </div>
         @endif
-
+</div>
 @endsection

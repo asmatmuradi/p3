@@ -17,7 +17,6 @@
 <body>
 
 	<header class="text-center">
-		<img
 				<img
             src='/img/cell-billsplit.jpg'
 						style='width:100px'

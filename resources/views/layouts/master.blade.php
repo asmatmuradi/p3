@@ -18,11 +18,11 @@
 
 	<header class="text-center">
 		<img
-				<a href='/'><img
+				<img
             src='/img/cell-billsplit.jpg'
 						style='width:100px'
 						align='center'
-            alt='Project3 Logo'></a>
+            alt='Project3 Logo'>
 	</header>
 
 	<section id='main'>

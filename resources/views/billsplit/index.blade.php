@@ -11,21 +11,31 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="Total_Tab">*Total Tab</label>
               <div class="col-md-10">
-                <input id="Total_Tab" name="Total_Tab" type="number" class="form-control input-md" value='{{ $Total_Tab or ''}}'>
+                <input id="totalTab" name="totalTab" type="number" class="form-control input-md" value='{{ $totalTab or ''}}'>
+                @if($errors->get('totalTab'))
+                <div class="alert alert-danger">
+                  @include('modules.error-field', ['fieldName' => 'totalTab'])
+                </div>
+                @endif
               </div>
             </div>
 
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="Split_How_Many_Way?">*Split How Many Way?</label>
+              <label class="col-md-4 control-label" for="splitHowManyWay">*Split How Many Way?</label>
               <div class="col-md-10">
-                <input id="Split_How_Many_Way?" name="Split_How_Many_Way?" type="number" class="form-control input-md" value='{{ $Split_How_Many_Way or ''}}'>
+                <input id="splitHowManyWay" name="splitHowManyWay" type="number" class="form-control input-md" value='{{ $splitHowManyWay or ''}}'>
+                @if($errors->get('splitHowManyWay'))
+                <div class="alert alert-danger">
+                  @include('modules.error-field', ['fieldName' => 'splitHowManyWay'])
+                </div>
+                @endif
               </div>
             </div>
 
             <!-- Multiple Radios -->
             <div class="form-group">
-              <label class="col-md-4" for="radios-0">*Service Tip</label>
+              <label class="col-md-4" for="radios-0">Service Tip</label>
               <div class="col-md-4">
                 <div class="radio">
                   <label for="radios-0">
@@ -39,29 +49,31 @@
                By $
              </label>
                 </div>
-                <script type="text/javascript">
-                 document.getElementByValue('radios').value = "{{$radios}}";
-               </script>
               </div>
               <div class="col-md-10">
+                @if($errors->get('radios'))
+                <div class="alert alert-danger">
+                  @include('modules.error-field', ['fieldName' => 'radios'])
+                </div>
+                @endif
                 <input id="radioValue" name="radioValue" type="number" class="form-control input-md" value='{{$radioValue or ''}}'>
               </div>
             </div>
 
             <!-- Select Discount -->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="Discount">
+              <label class="col-md-4 control-label" for="discount">
                 Discount
               </label>
               <div class="col-md-10">
-                <select id="Discount" name="Discount" class="form-control">
+                <select id="discount" name="discount" class="form-control">
                <option value=0>Does Not Apply</option>
                <option value =0.10>EmployeeDiscount - 10%</option>
                <option value =0.05>StudentDiscount - 5%</option>
                <option value=0.07>SeniorCitizenDiscount - 7%</option>
              </select>
              <script type="text/javascript">
-              document.getElementById('Discount').value = "{{$Discount}}";
+              document.getElementById('discount').value = "{{$discount}}";
             </script>
               </div>
             </div>
@@ -70,7 +82,7 @@
             <div class="form-group">
               <div class="col-md-4">
               <label class="form-check-label">
-                <input type="checkbox" id="RoundUp" name="RoundUp" class="form-check-input" {{ ($RoundUp) ? 'CHECKED' : ''}}>
+                <input type="checkbox" id="roundUp" name="roundUp" class="form-check-input" {{ ($roundUp) ? 'CHECKED' : ''}}>
                 RoundUp
               </label>
               </div>
@@ -90,5 +102,5 @@
             <h2> The bill is ${{ $tabForEachWay }} each way.</h2>
             </div>
         @endif
-</div>
+      </div>
 @endsection

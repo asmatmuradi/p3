@@ -20,7 +20,6 @@
 				<img
             src='/img/cell-billsplit.jpg'
 						style='width:100px'
-
             alt='Project3 Logo'>
 	</header>
 

@@ -9,7 +9,7 @@
 
             <!-- tabAmount input-->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="Total_Tab">*Total Tab</label>
+              <label class="col-md-4 control-label" for="totalTab">*Total Tab</label>
               <div class="col-md-10">
                 <input id="totalTab" name="totalTab" type="number" class="form-control input-md" value='{{ $totalTab or ''}}'>
                 @if($errors->get('totalTab'))
